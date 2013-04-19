@@ -10,6 +10,10 @@
 
 @interface BCImageProcessor : NSObject
 
-+(UIImage *)darkenedAndBlurredImageForImage:(UIImage *)image;
++(UIImage *)darkenedImageForImage: (UIImage *)image;
++(UIImage *)blurredImageForImage: (UIImage *)image;
++(UIImage *)darkenedAndBlurredImageForImage: (UIImage *)image;
++(UIImage *)maskImage: (UIImage *)image withMask: (UIImage *)maskImage;
+
 
 @end
